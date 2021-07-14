@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Avinash Kumar</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css?version=6">
+</head>
+
+<body>
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-collapse">
+	                 <span class="sr-only">Toggle navigation</span>
+	                 <span class="icon-bar"></span>
+	                 <span class="icon-bar"></span>
+	                 <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="nav-collapse">
+                <ul class="nav navbar-nav">
+                    <li id="home-btn"><a href="#">Home</a></li>
+                    <li id="project-btn"><a href="#">Projects</a></li>
+                    <li id="resume-btn"><a href="#">Resume</a></li>
+                    <li id="code-btn"><a href="#">Code</a></li>
+                    <li id="contact-btn"><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="first-jumbo" class="jumbotron">
+        <div class="container">
+            <a href="https://github.com/thaakur">
+                <p>Check out my Github <img src="data:image/png;base64,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"
+                        height="20" width="20"> @AvinashKumar</p>
+            </a>
+        </div>
+    </div>
+
+    <div id="second-jumbo" class="jumbotron">
+        <div class="container">
+            <h1 id="jumbotron-header">Hello, my name is Avinash Kumar.</h1>
+            <h1 id="dynamic-header">Programmer</h2>
+        </div>
+    </div>
+
+    <div id="intro-wrapper" class="row">
+        <h1>Introduction</h1>
+        <div class="col-md-1"></div>
+        <div class="col-xs-12 col-md-7" id="introduction">
+            <p>Welcome to my portfolio site! I am soon to be graduated <b>Computer Science student at Lovely Professional University</b> in Punjab. Since I am soon to be graduated, I plan to immediately start my job hunt to look for a fun crowd to work with!</p>
+            <p>If you continue on, you will find information on some personal projects I have done, take a look at my most up to date resume, and find my contact information. If you are just here for code of Projects mentioned in CV I provided, you can
+                <a href="https://github.com/thaakur">view my github</a>, or look at the coding section :)</p>
+            <p>Thank you!</p>
+        </div>
+        <div class="col-xs-12 col-md-3" id="intro-pic">
+            <p><img align="middle" height="250px" width="350px" src="images/me.jpg"></p>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+
+    <div id="project-wrapper">
+        <!-- start of project wrapper -->
+        <h1 class="section-spacing-top section-spacing-bottom">Projects</h1>
+
+        <hr>
+
+        <div id="mixtape-maker" class="row">
+            <span class="italic-section" style="font-size: 1.2em; margin-right: 10px;">Personal Project 3</span>
+            <div class="project-logo col-xs-12">
+                <img height="200px" width="230px" src="images/mixtapelogo.png">
+            </div>
+            <div id="mixtake-pic-container" class="row col-xs-12">
+                <div class="col-xs-11 col-md-4">
+                    <img height="275px" width="300px" src="images/mixtapepic1.PNG">
+                </div>
+                <div class="col-xs-11 col-md-4">
+                    <img height="275px" width="350px" src="images/mixtapepic2.PNG">
+                </div>
+                <div class="col-xs-11 col-md-4">
+                    <img height="275px" width="300px" src="images/mixtapepic3.PNG">
+                </div>
+            </div>
+        </div>
+        <div class="project-desc">
+            <h5>This is a python program which will create a mixtape for you!</h5>
+            <p>Simply create a text file on your desktop and then, line by line, start typing songs you want downloaded (LEFT PICTURE). Then you can give your mixtape a title and click download (MIDDLE PICTURE). As the download process is happening, it will
+                update you on if the specific song has found a video matching the titles you gave, as well as notify you when the download has finished. Once all downloads are complete, it will put your mixtape folder on your desktop with all mp3 formats
+                (RIGHT PICTURE).</p>
+            <p>This was done using Youtube DL, a command line tool which allows you to download youtube videos. My way of improvement was by giving the user the option to not use the command line, instead using the GUI window to download their music. Also,
+                you are not required to give a specific URL to download a song.</p>
+            <p>What I Learned:</p>
+            <ul>
+                <li>Create URL query strings in Python</li>
+                <li>Handling a multi-threaded application in Python</li>
+                <li>How to turn a python program into an executable</li>
+                <li>How to use the Tkinter module for the GUI window, labels, and text fields</li>
+                <li>Commands to download audio using Youtube DL</li>
+            </ul>
+            <p>The source code can be viewed <a href="https://github.com/thaakur/Mixtape-Maker/blob/main/Converter.py">here</a>.&nbsp:)
+        </div>
+
+        <hr>
+
+
+        <div class="section-spacing-top-lg"></div>
+    </div>
+    <!-- end of project wrapper -->
+
+    <div id="resume-wrapper">
+        <!-- start of resume -->
+        <h1 class="section-spacing-top section-spacing-bottom">Resume</h1>
+        <div id="resume-container">
+            <p class="resume-part-title">EDUCATION</p>
+            <hr>
+            <p><b>Lovely Professional University</b>
+                <span class="italic-section">
+					<i>Graduation: June 2022</i>
+				</span>
+            </p>
+            <p><b>Bachelor of Technology in Computer Science</b>
+                <span class="italic-section">
+					<i>Phagwara, Punjab</i>
+				</span>
+            </p>
+            <p><b>TGPA: 7.60</b></p>
+            <div class="section-spacing-top-xs resume-desc">
+                <p>Some Related Courses (<b>Hover over a class for a description!</b>)</p>
+                <ul>
+                    <li id="class1">Data Structures and Algorithms</li>
+                    <ul id="class1-desc" class="hidden-xs hidden-sm hidden-md hidden-lg" style="color: green;">
+                        <li>This was a challenging, yet fun class. One of my favorite classes thus far. The data structures that were covered in the course included trees, priority queues, graphs, heaps, sets, and maps. Additionally, sorting algorithms such
+                            as Merge, Quick, Bubble, Insertion, Heap, Counting, Selection, and Radix Sort were covered (some more than others). Linked and array-based data structures, lists, stacks, queues, hashing, searching, recursion, and an introduction
+                            to tree structure were the primary subjects of the course.</li>
+                        <p>Grade Received: A</p>
+                    </ul>
+                    <li id="class3">C++ Programming</li>
+                    <ul id="class3-desc" class="hidden-xs hidden-sm hidden-md hidden-lg" style="color: green;">
+                        <li>This was a challenging class for me as this was my first time programming ever; however, it was nice to learn something new. The class covered class encapsulation, inheritance, polymorphism, exception handling, template class,
+                            and OOP design all in C++.</li>
+                        <p>Grade Received: A</p>
+                    </ul>
+                    <li id="class6">Design and Analysis of Algorithms</li>
+                    <ul id="class6-desc" class="hidden-xs hidden-sm hidden-md hidden-lg" style="color: green;">
+                        <li>This was a great class to expand my knowledge on various types of algorithms. Throughout the course, we covered algorithm design techniques including divide-and-conquer, the greedy method, dynamic programming, and backtracking.
+                            We also covered Merge Sort, Quick Sort, the Knapsack Problem, the Traveling Salesman, and Dijkstra's Algorithm.</li>
+                        <p>Grade Received: A</p>
+                    </ul>
+                    <li id="class10">Python Programming</li>
+                    <ul id="class10-desc" class="hidden-xs hidden-sm hidden-md hidden-lg" style="color: green;">
+                        <li>Introductory course to Python programming. Learned various modules to accomplish projects and lab assignments.</li>
+                        <p>Grade Received: A</p>
+                    </ul>
+                    <li id="class13">Operating Systems</li>
+                    <ul id="class13-desc" class="hidden-xs hidden-sm hidden-md hidden-lg" style="color: green;">
+                        <li>Covered a variety of topics including process management, concurrency and synchronization, deadlock, processor management, scheduling and dispatch, memory management, virtual memory, and file systems.</li>
+                        <p>Grade Received: B+</p>
+                    </ul>
+                    <li id="class14">Database Systems</li>
+                    <ul id="class14-desc" class="hidden-xs hidden-sm hidden-md hidden-lg" style="color: green;">
+                        <li>Covered data models (entity-relationship model, relational model and object oriented model), theory of database design and data manipulation processes using relational algebra and calculus. Finally, we learned about SQL in programming
+                            language environments.</li>
+                        <p>Grade Received: A</p>
+                    </ul>
+                    <li id="class15">Software Engineering</li>
+                    <ul id="class15-desc" class="hidden-xs hidden-sm hidden-md hidden-lg" style="color: green;">
+                        <li>This class was revolved around software requirements and specifications, methodologies, tools, project management and testing. In order to understand these concepts, it was required to create a SRS file over a particular topic
+                            assigned by teacher.</li>
+                        <p>Grade Received: A</p>
+                    </ul>
+                </ul>
+            </div>
+            <p class="section-spacing-top resume-part-title">Skills</p>
+            <hr>
+            <table>
+                <caption>Languages and Frameworks</caption>
+                <tr>
+                    <th></th>
+                    <th>Beginner</th>
+                    <th>Intermediate</th>
+                    <th>Proficient</th>
+                    <th>Advanced</th>
+                </tr>
+                <tr>
+                    <td class="advanced">C++</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="class-x">X</td>
+                </tr>
+                <tr>
+                    <td class="proficient">Python</td>
+                    <td></td>
+                    <td></td>
+                    <td class="class-x">X</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="proficient">HTML/CSS</td>
+                    <td></td>
+                    <td></td>
+                    <td class="class-x">X</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="intermediate">Bootstrap</td>
+                    <td></td>
+                    <td class="class-x">X</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="intermediate">Django</td>
+                    <td></td>
+                    <td class="class-x">X</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="intermediate">SQL</td>
+                    <td></td>
+                    <td class="class-x">X</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+            <table class="section-spacing-top-small">
+                <caption>Software</caption>
+                <tr>
+                    <th></th>
+                    <th>Beginner</th>
+                    <th>Intermediate</th>
+                    <th>Proficient</th>
+                    <th>Advanced</th>
+                </tr>
+                <tr>
+                    <td class="proficient">Visual Studio Code</td>
+                    <td></td>
+                    <td></td>
+                    <td class="class-x">X</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="intermediate">CodeBlocks</td>
+                    <td></td>
+                    <td class="class-x">X</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="beginner">Sublime Text</td>
+                    <td class="class-x">X</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+            <table class="section-spacing-top-small">
+                <caption>Development Tools</caption>
+                <tr>
+                    <th></th>
+                    <th>Beginner</th>
+                    <th>Intermediate</th>
+                    <th>Proficient</th>
+                    <th>Advanced</th>
+                </tr>
+                <tr>
+                    <td class="proficient">Git</td>
+                    <td></td>
+                    <td></td>
+                    <td class="class-x">X</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="intermediate">Docker</td>
+                    <td></td>
+                    <td class="class-x">X</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+
+            <p class="section-spacing-top resume-part-title">Experience</p>
+            <hr>
+            <p><b>Business Analyst Intern</b>
+                <span class="italic-section">
+					<i>December 2020 - January 2021</i>
+				</span>
+            </p>
+            <p><b>Sparks Foundation</b>
+                <span class="italic-section">
+					<i>Singapore, Singapore</i>
+				</span>
+            </p>
+            <p><b>Certificate of Completion:&nbsp&nbsp</b><a href="images/certificate.pdf">Certificate.pdf</a>
+                <div class="section-spacing-top-xs section-spacing-bottom-small resume-desc">
+                    <p>Learned to work on:</p>
+                    <ul>
+                        <li>Excel</li>
+                        <li>Tableau</li>
+                    </ul>
+                    <p>Responsibilities:</p>
+                    <ul>
+                        <li>Work with mentor to get data dashboards on tableau and excel</li>
+                        <li>Work on millions of records of data and generate meaningful patterns and insights from the data to help make business decisions.</li>
+                        <li> Ensuring that all the data dashboards are running fine with accurate data and taking end to end responsibility for the same</li>
+                        <li>Ensuring timely updation of data into dashboards</li>
+                    </ul>
+                </div>
+
+        </div>
+        <!-- end of resume -->
+
+        <div id="code-wrapper">
+            <!-- start of code section -->
+            <h1 class="section-spacing-top section-spacing-bottom">Code</h1>
+
+
+            <div class="code-example">
+                <p><b>Picture Organizer - A Python Program (Personal Project)</b>
+                    <span><i>Code Example</i></span>
+                </p>
+                <div>
+                    <p>The following program will transfer all my pictures from my camera to their appropriate directories. Using the Tkinter module, it will pop up a small window allowing me to enter what I want to name the folder containing all of my new
+                        pictures. If the file I have entered has already been created, it will just go further into the subdirectories.</p>
+                    <p>The files are stored in the following format: E: \ My Digital Camera Pictures \ [Year] Pictures \ [Year] [Month]-[Day]-[Year] - [File Name I Give]\[All Pictures Go Here]</p>
+                    <p>I wrote this program mainly to save time and ensure I wouldn't have to rename each picture with their appropriate timestamps.</p>
+                </div>
+            </div>
+            <pre>
+			<code>
+	import time
+	import os
+	import tkinter as tk
+	import shutil
+
+	# directory of pictures
+	directory_path = "E:\\My Digital Camera Pictures\\"
+
+	# directory of camera path
+	picture_directory_path = "I:\\DCIM\\100MSDCF\\"
+
+
+	# Creates a GUI window to be able to enter the name of the new folder of pictures.
+	class StorePictures(tk.Tk):
+	    def __init__(self):
+	        tk.Tk.__init__(self)
+	        self.title("File")
+	        self.label = tk.Label(self, text="Name")
+	        self.entry = tk.Entry(self)
+	        self.button = tk.Button(self, text="Done", command=self.on_button_click)
+	        self.label.pack(side=tk.LEFT)
+	        self.button.pack(side=tk.BOTTOM)
+	        self.entry.pack(side=tk.RIGHT)
+
+	    def on_button_click(self):
+	        pictures = os.listdir(picture_directory_path)
+
+	        date_string = get_date_string(pictures[0]) + self.entry.get() + "\\"
+	        path = get_year_directory_path(directory_path)
+	        path = get_date_directory_path(path, date_string)
+
+	        count = get_number_of_jpg(pictures)
+
+	        index = 0
+	        for picture in pictures:
+	            filename, file_extension = os.path.splitext(picture_directory_path + picture)
+	            if file_extension == ".JPG":
+	                index += 1
+	                picture_date_created = get_date_string(picture) + self.entry.get() + " #"
+	                temp_picture_name = picture_date_created + str(index) + " of " + str(count) + ".JPG"
+	                picture_directory = path + temp_picture_name
+	                shutil.copy(picture_directory_path + picture, picture_directory)
+
+	        self.quit()
+
+
+	# creates year folder path (EX: 2016 Pictures, 2015 Pictures, etc.) if it does
+	# not already exist
+	def get_year_directory_path(path):
+	    temp_directory = path + "20" + time.strftime("%y") + " Pictures\\"
+	    if not os.path.exists(temp_directory):
+	        os.makedirs(temp_directory)
+	    path = temp_directory
+	    return path
+
+
+	# creates date folder path (EX: 2016 Pictures / 2016-04-06 - [Some event here]) if it
+	# does not already exist
+	def get_date_directory_path(path, date_string):
+	    temp_directory = path + date_string
+	    if not os.path.exists(temp_directory):
+	        os.makedirs(temp_directory)
+	    path = temp_directory
+	    return path
+
+
+	# returns the appropriate time stamp to attach to the folder name
+	def get_date_string(picture):
+	    return "20" + time.strftime("%y") + " - " + 
+	    time.strftime("%m-%d-%y", time.localtime(os.path.getctime(picture_directory_path + picture))) + " - "
+
+
+	# returns the amount of jpg pictures in the camera folder
+	def get_number_of_jpg(pictures):
+	    count = 0;
+	    for picture in pictures:
+	        filename, file_extension = os.path.splitext(picture_directory_path + picture)
+	        if file_extension == ".JPG":
+	            count += 1
+	    return count
+
+	app = StorePictures()
+	app.mainloop()
+			</code>
+		</pre>
+            <div class="section-spacing-top-lg"></div>
+        </div>
+        <!-- end of code section -->
+
+        <div id="contact-wrapper">
+            <h1 class="section-spacing-top section-spacing-bottom">Contact</h1>
+            <div id="social" class="section-spacing-bottom-small row">
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <img src="images/mail.png" width="84px" height="84px">
+                    <p><a href="mailto:avinash11812851@gmail.com">avinash11812851@gmail.com</a></p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <img src="images/fb.png" width="84px" height="84px">
+                    <p><a href="https://www.facebook.com/avi.arnav3">facebook.com/avi.arnav3</a></p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <img src="data:image/jpeg;base64,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"
+                        width="84px" height="84px">
+                    <p>7004985729</p>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+                // changes word in jumbotron
+                setInterval(function() {
+                    $('#dynamic-header').fadeOut(400, function() {
+                        var $this = $(this);
+                        $this.text($this.text() == 'Programmer' ? 'Django App Developer' : 'Programmer');
+                        $this.fadeIn(400);
+                    });
+                }, 2600);
+
+                // set mouse hover for resume class descriptions
+                setResumeHoverCSS("#class1", "#class1-desc");
+                setResumeHoverCSS("#class2", "#class2-desc");
+                setResumeHoverCSS("#class3", "#class3-desc");
+                setResumeHoverCSS("#class4", "#class4-desc");
+                setResumeHoverCSS("#class5", "#class5-desc");
+                setResumeHoverCSS("#class6", "#class6-desc");
+                setResumeHoverCSS("#class7", "#class7-desc");
+                setResumeHoverCSS("#class8", "#class8-desc");
+                setResumeHoverCSS("#class9", "#class9-desc");
+                setResumeHoverCSS("#class10", "#class10-desc");
+                setResumeHoverCSS("#class11", "#class11-desc");
+                setResumeHoverCSS("#class12", "#class12-desc");
+                setResumeHoverCSS("#class13", "#class13-desc");
+                setResumeHoverCSS("#class14", "#class14-desc");
+                setResumeHoverCSS("#class15", "#class15-desc");
+                setResumeHoverCSS("#class16", "#class16-desc");
+                setResumeHoverCSS("#class17", "#class17-desc");
+
+                setButtonClick("#home-btn", "#first-jumbo");
+                setButtonClick("#project-btn", "#project-wrapper");
+                setButtonClick("#resume-btn", "#resume-wrapper");
+                setButtonClick("#code-btn", "#code-wrapper");
+                setButtonClick("#contact-btn", "#contact-wrapper");
+
+                function setResumeHoverCSS(listID, descID) {
+                    $(listID).mouseenter(function() {
+                        $(descID).toggleClass("hidden-xs").toggleClass("hidden-sm")
+                            .toggleClass("hidden-md").toggleClass("hidden-lg");
+                    });
+
+                    $(listID).mouseleave(function() {
+                        $(descID).toggleClass("hidden-xs").toggleClass("hidden-sm")
+                            .toggleClass("hidden-md").toggleClass("hidden-lg");
+                    });
+                }
+
+                function scrollTo(id) {
+                    $('html,body').animate({
+                        scrollTop: $(id).offset().top
+                    }, 'slow');
+                }
+
+                function setButtonClick(btnID, id) {
+                    $(btnID).on('click', function(e) {
+                        scrollTo(id);
+                        return false;
+                    });
+                }
+            });
+        </script>
+</body>
+
+</html>
