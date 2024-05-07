@@ -1,485 +1,539 @@
 * {
-  	border-radius: 0 !important;
+    border-radius: 0 !important;
 }
 
 li {
-	margin: 10px 0;
+    margin: 10px 0;
 }
 
 pre {
-	margin: 0 auto 100px; 
-	width: 1000px; 
-	height: 500px;
-
+    margin: 0 auto 100px;
+    width: 1000px;
+    height: 500px;
 }
 
 h1 {
-	text-align: center;
-	color: #FFFFFF;
-	font-family: impact;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: impact;
 }
 
-hr { 
-	background-color: black; 
-	height: 1px; 
-	border: 0;
-	max-width: 1100px;
+hr {
+    background-color: black;
+    height: 1px;
+    border: 0;
+    max-width: 1100px;
 }
 
-table, th, td {
+table,
+th,
+td {
     border: 1px solid black;
     border-collapse: collapse;
     width: 100%;
 }
 
-th, td {
+th,
+td {
     padding: 5px;
     text-align: center;
     font-size: 1.2em;
 }
 
 .section-spacing-top-lg {
-	margin-top: 160px;
+    margin-top: 160px;
 }
 
 .section-spacing-bottom-lg {
-	margin-bottom: 160px;
+    margin-bottom: 160px;
 }
 
 .section-spacing-top {
-	margin-top: 80px;
+    margin-top: 80px;
 }
 
 .section-spacing-bottom {
-	margin-bottom: 80px;
+    margin-bottom: 80px;
 }
 
 .section-spacing-top-small {
-	margin-top: 60px;
+    margin-top: 60px;
 }
 
 .section-spacing-bottom-small {
-	margin-bottom: 60px;
+    margin-bottom: 60px;
 }
 
 .section-spacing-top-xs {
-	margin-top: 25px;
+    margin-top: 25px;
 }
 
 .section-spacing-bottom-xs {
-	margin-bottom: 25px;
+    margin-bottom: 25px;
 }
 
 .row {
-	margin-left: 0;
-	margin-right: 0;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .navbar {
-	margin: 0;
-	background-color: #C26868;
-	border: #C26868;
-	position: fixed;
-	z-index: 1000;
-	width: 100%;
+    margin: 0;
+    background-color: #C26868;
+    border: #C26868;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
 }
 
 .navbar-nav {
-	width: 100%;
-	text-align: center;
+    width: 100%;
+    text-align: center;
 }
 
 .navbar-nav li {
-	float: none;
-	display: inline-block;
-	padding-right: 10px;
-	padding-left: 10px;
-	font-size: 1.5em;
-	border-left: 1px solid #4C5364;
+    float: none;
+    display: inline-block;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 1.5em;
+    border-left: 1px solid #4C5364;
 }
 
-.navbar-default .navbar-nav > li > a {
-	color: #ffffff;
+.navbar-default .navbar-nav>li>a {
+    color: #ffffff;
 }
 
 .navbar-default .navbar-collapse {
-	border-color: #C26868;
+    border-color: #C26868;
 }
 
 .navbar-default .navbar-toggle {
-	border-color: #4C5364;
+    border-color: #4C5364;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-	background-color: #4C5364;
+    background-color: #4C5364;
 }
 
 #contact-btn {
-	border-right: 1px solid #4C5364;
+    border-right: 1px solid #4C5364;
 }
 
 #home {
-	overflow: auto;
-	background-color: #ff4f44;
+    overflow: auto;
+    background-color: #ff4f44;
 }
 
 #introduction p {
-	font-size: 1.5em;
-	line-height: 2;
-	color: #FFFFFF;
-	font-family: monospace;
+    font-size: 1.5em;
+    line-height: 2;
+    color: #FFFFFF;
+    font-family: monospace;
 }
 
 #intro-pic {
-	margin-left: 50px;
-	margin-top: 50px;
+    margin-left: 50px;
+    margin-top: 50px;
 }
 
 #intro-pic p {
-	text-align: center;
+    text-align: center;
 }
 
 .jumbotron {
-	margin: 0;
+    margin: 0;
 }
 
 #first-jumbo {
-	padding-bottom: 0px;
-	padding-top: 80px;
-	padding-bottom: 0px;
-	background-color: #353a46;
+    padding-bottom: 0px;
+    padding-top: 80px;
+    padding-bottom: 0px;
+    background-color: #353a46;
 }
 
 #first-jumbo a:hover {
-	text-decoration: none;
+    text-decoration: none;
 }
 
 #first-jumbo a p {
-	text-align: center;
-	color: #FFFFFF;
-	padding-top: 5px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 5px;
 }
 
 #second-jumbo {
-	background-color: #4C5364;
+    background-color: #4C5364;
 }
 
 #jumbotron-header {
-	text-align: center;
-	color: #FFFFFF;
-	font-family: impact;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: impact;
 }
 
 #jumbotron-desc {
-	text-align: center;
-	color: #FFFFFF;
-	font-family: monospace;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: monospace;
 }
 
 #intro-wrapper {
-	background-color: #C26868;
+    background-color: #C26868;
 }
 
 #dynamic-header {
-	font-family: impact;
-	text-align: center;
-	color: #C26868;
+    font-family: impact;
+    text-align: center;
+    color: #C26868;
 }
 
-#project-wrapper, #code-wrapper {
-	background-color: #eee; 
-	overflow: auto; 
+#project-wrapper,
+#code-wrapper {
+    background-color: #eee;
+    overflow: auto;
 }
 
-#project-wrapper h1, #code-wrapper h1 {
-	color: #000000;
-	font-size: 3em;
+#project-wrapper h1,
+#code-wrapper h1 {
+    color: #000000;
+    font-size: 3em;
 }
 
 #horde-clicker {
-	max-width: 1100px;
-	margin: 100px auto 0; 
-	text-align: center; 
-	background-color: #ffcccc; 
-	overflow: auto; 
+    max-width: 1100px;
+    margin: 100px auto 0;
+    text-align: center;
+    background-color: #ffcccc;
+    overflow: auto;
 }
 
 #fact-hack {
-	max-width: 1100px; 
-	margin: 100px auto 0; 
-	text-align: center; 
-	background-color: #b2d8b2; 
-	overflow: auto;
+    max-width: 1100px;
+    margin: 100px auto 0;
+    text-align: center;
+    background-color: #b2d8b2;
+    overflow: auto;
 }
 
 #stat-track {
-	max-width: 1100px; 
-	margin: 100px auto 0; 
-	text-align: center; 
-	background-color: #778899; 
-	overflow: auto;
+    max-width: 1100px;
+    margin: 100px auto 0;
+    text-align: center;
+    background-color: #778899;
+    overflow: auto;
 }
 
 #mixtape-maker {
-	max-width: 1100px; 
-	margin: 100px auto 0; 
-	text-align: center; 
-	background-color: #778899; 
-	overflow: auto;
+    max-width: 1100px;
+    margin: 100px auto 0;
+    text-align: center;
+    background-color: #778899;
+    overflow: auto;
 }
 
-
 #mixtake-pic-container {
-	margin-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 #mixtake-pic-container div {
-	margin-bottom: 55px;
+    margin-bottom: 55px;
 }
 
 .project-logo {
-	margin-bottom: 30px;
-	margin-top: 50px;
+    margin-bottom: 30px;
+    margin-top: 50px;
 }
 
 .project-title {
-	margin: 0 auto;
-	max-width: 1100px;
+    margin: 0 auto;
+    max-width: 1100px;
 }
 
 .project-pic-container {
-	margin-top: 30px;
+    margin-top: 30px;
 }
 
 .project-pic-container div {
-	margin-left: 25px;
-	margin-bottom: 55px;
+    margin-left: 25px;
+    margin-bottom: 55px;
 }
 
 .project-desc {
-	margin: 0 auto 100px; 
-	padding: 25px; 
-	max-width: 1100px; 
-	background-color: #FFFFFF; 
+    margin: 0 auto 100px;
+    padding: 25px;
+    max-width: 1100px;
+    background-color: #FFFFFF;
 }
 
-.project-desc h5, .project-desc ul,
+.project-desc h5,
+.project-desc ul,
 .project-desc p {
-	line-height: 2;
-	font-weight: bold;
-	font-family: courier;
+    line-height: 2;
+    font-weight: bold;
+    font-family: courier;
 }
 
 #resume-wrapper {
-	background-color: #ddd; 
-	overflow: auto; 
+    background-color: #ddd;
+    overflow: auto;
 }
 
 #resume-wrapper h1 {
-	color: #000000;
-	font-size: 3em;
+    color: #000000;
+    font-size: 3em;
 }
 
 #resume-container {
-	margin: 0 auto; 
-	width: 700px;
+    margin: 0 auto;
+    width: 700px;
 }
 
 .resume-part-title {
-	color: #4c4cff;
-	font-size: 1.2em; 
-	letter-spacing: 0.3em; 
-	font-family: impact;
+    color: #4c4cff;
+    font-size: 1.2em;
+    letter-spacing: 0.3em;
+    font-family: impact;
 }
 
 .italic-section {
-	float: right; 
-	font-family: monospace;
+    float: right;
+    font-family: monospace;
 }
 
-.resume-desc p, .resume-desc ul {
-	font-family: monospace;
+.resume-desc p,
+.resume-desc ul {
+    font-family: monospace;
 }
 
-#class1:hover, #class1-desc p {
-	color: #C26868;
+#class1:hover,
+#class1-desc p {
+    color: #C26868;
 }
 
-#class2:hover, #class2-desc p {
-	color: #C26868;
+#class2:hover,
+#class2-desc p {
+    color: #C26868;
 }
 
-#class3:hover, #class3-desc p {
-	color: #C26868;
+#class3:hover,
+#class3-desc p {
+    color: #C26868;
 }
 
-#class4:hover, #class4-desc p {
-	color: #C26868;
+#class4:hover,
+#class4-desc p {
+    color: #C26868;
 }
 
-#class5:hover, #class5-desc p {
-	color: #C26868;
+#class5:hover,
+#class5-desc p {
+    color: #C26868;
 }
 
-#class6:hover, #class6-desc p {
-	color: #C26868;
+#class6:hover,
+#class6-desc p {
+    color: #C26868;
 }
 
-#class7:hover, #class7-desc p {
-	color: #C26868;
+#class7:hover,
+#class7-desc p {
+    color: #C26868;
 }
 
-#class8:hover, #class8-desc p {
-	color: #C26868;
+#class8:hover,
+#class8-desc p {
+    color: #C26868;
 }
 
-#class9:hover, #class9-desc p {
-	color: #C26868;
+#class9:hover,
+#class9-desc p {
+    color: #C26868;
 }
 
-#class10:hover, #class10-desc p {
-	color: #C26868;
+#class10:hover,
+#class10-desc p {
+    color: #C26868;
 }
 
-#class11:hover, #class11-desc p {
-	color: #C26868;
+#class11:hover,
+#class11-desc p {
+    color: #C26868;
 }
 
-#class12:hover, #class12-desc p {
-	color: #C26868;
+#class12:hover,
+#class12-desc p {
+    color: #C26868;
 }
 
-#class13:hover, #class13-desc p {
-	color: #C26868;
+#class13:hover,
+#class13-desc p {
+    color: #C26868;
 }
 
-#class14:hover, #class14-desc p {
-	color: #C26868;
+#class14:hover,
+#class14-desc p {
+    color: #C26868;
 }
 
-#class15:hover, #class15-desc p {
-	color: #C26868;
+#class15:hover,
+#class15-desc p {
+    color: #C26868;
 }
 
-#class16:hover, #class16-desc p {
-	color: #C26868;
+#class16:hover,
+#class16-desc p {
+    color: #C26868;
 }
 
-#class17:hover, #class17-desc p {
-	color: #C26868;
+#class17:hover,
+#class17-desc p {
+    color: #C26868;
 }
 
 .class-x {
-	background-color: honeydew;
+    background-color: honeydew;
 }
 
 .advanced {
-	color: green;
+    color: green;
 }
 
 .proficient {
-	color: #7fbf7f;
+    color: #7fbf7f;
 }
 
 .intermediate {
-	color: #b2b200;
+    color: #b2b200;
 }
 
 .beginner {
-	color: red;
+    color: red;
 }
 
 .code-example {
-	margin: 0 auto; 
-	width: 1000px; 
+    margin: 0 auto;
+    width: 1000px;
 }
 
-.code-example b, .code-example i {
-	font-size: 1.1em; 
-	letter-spacing: 0.1em;
+.code-example b,
+.code-example i {
+    font-size: 1.1em;
+    letter-spacing: 0.1em;
 }
 
 .code-example span {
-	float: right;
+    float: right;
 }
 
 .code-example div {
-	background-color: #FFFFFF; 
-	padding: 15px; 
-	font-family: monospace;
+    background-color: #FFFFFF;
+    padding: 15px;
+    font-family: monospace;
 }
 
 #contact-wrapper {
-	background-color: #C26868; 
-	overflow: auto; 
+    background-color: #C26868;
+    overflow: auto;
 }
 
 #contact-wrapper h1 {
-	font-size: 5em;
+    font-size: 5em;
 }
 
 #social {
-	text-align: center;
+    text-align: center;
 }
 
 #social div {
-	margin-top: 3px;
-	font-weight: 400px;
-	font-size: 16px;
+    margin-top: 3px;
+    font-weight: 400px;
+    font-size: 16px;
 }
 
-#social div p, #social div p a {
-	color: #FFFFFF;
+#social div p,
+#social div p a {
+    color: #FFFFFF;
 }
 
 #social div p a:hover {
-	text-decoration: none;
-	color: #000;
+    text-decoration: none;
+    color: #000;
+}
+
+.slideshow-container {
+    position: relative;
+    align-content: center;
+    max-width: 100%;
+    margin: auto;
+}
+
+.mySlides {
+    display: block;
+    text-align: center;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-	#intro-pic p img {
-		margin-bottom: 50px;
-	}
+    #intro-pic p img {
+        margin-bottom: 50px;
+    }
 }
 
 @media (max-width: 767px) {
-	.navbar-nav li {
-		display: inherit;
-		border-left: none;
-	}
-
-	#horde-clicker {
-		text-align: none;
-	}
-
-	#fact-hack {
-		text-align: none;
-	}
-
-	.project-logo {
-		margin-left: 0;
-	}
-
-	.project-pic-container div {
-		margin-left: 0;
-	}
-
-	#contact-btn {
-		border-right: none;
-	}
-
-	#introduction {
-		text-align: center;
-	}
-
-	#intro-pic p {
-		margin-bottom: 50px;
-		margin-right: 100px;
-	}
-
-	#intro-pic p img {
-		width: 150px;
-		height: 150px;
-	}
+    .navbar-nav li {
+        display: inherit;
+        border-left: none;
+    }
+    #horde-clicker {
+        text-align: none;
+    }
+    #fact-hack {
+        text-align: none;
+    }
+    .project-logo {
+        margin-left: 0;
+    }
+    .project-pic-container div {
+        margin-left: 0;
+    }
+    #contact-btn {
+        border-right: none;
+    }
+    #introduction {
+        text-align: center;
+    }
+    #intro-pic p {
+        margin-bottom: 50px;
+        margin-right: 100px;
+    }
+    #intro-pic p img {
+        width: 150px;
+        height: 150px;
+    }
 }
