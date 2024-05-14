@@ -463,7 +463,6 @@ td {
 
 .slideshow-container {
     position: relative;
-    align-content: center;
     max-width: 100%;
     margin: auto;
 }
@@ -471,6 +470,9 @@ td {
 .mySlides {
     display: block;
     text-align: center;
+    width: auto;
+    height: auto;
+    overflow: hidden;
 }
 
 .prev,
@@ -481,7 +483,7 @@ td {
     width: auto;
     padding: 16px;
     margin-top: -22px;
-    color: white;
+    color: black;
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
@@ -496,7 +498,7 @@ td {
 
 .prev:hover,
 .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #ddd;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
